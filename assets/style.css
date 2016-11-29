@@ -1,0 +1,182 @@
+body {
+/*<!-- IMPORTING FONT -->*/
+    font-family: 'Montserrat', sans-serif;
+    margin: 0px;
+}
+
+/*PAGE ONE: COVERPHOTO OF GOLDEN GATE*/
+#pageonebackground {
+    width: 100%;
+    height: 500px;
+}
+
+/*MAKE COVERPHOTO DARK*/
+#overlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    top: 0px;
+    position: absolute;
+}
+
+/*POSITION OVERLAY OVER COVERPHOTO*/
+#pageone {
+    position: relative;
+}
+
+/*MENUBAR FIXED AT TOP OF SCREEN*/
+#menu {
+    position: fixed;
+    top: 0px;
+    background: white;
+    width: 100%;
+    height: 20px;
+    color: #81AEDA;
+    padding: 20px 0px;
+    font-size: 20;
+    font-weight: bolder;
+    z-index: 100;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+/*BUTTONS IN THE MENU BAR*/
+#menubuttons{
+    width: 960px;
+    margin: 0px auto;
+}
+
+#menubuttons:hover{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(0, 0, 0, 0.9);
+}
+
+/*MY INITIALS IN THE MENU BAR*/
+#initials {
+    float: left;
+    font-size: 25px;
+}
+
+/*CONTAINER FOR HEADING*/
+#heading {
+    position: absolute;
+    top: 50%;
+    color: white;
+    text-align: center;
+    width: 100%;
+    margin-top: -40px;
+}
+
+/*TEXT IN HEADING */
+#headingdescription {
+    font-size: 50px;
+    font-weight: 500;
+    margin: 0px auto;
+}
+
+/*BACKGROUND FOR PAGE TWO*/
+#pagetwo {
+    background: white;
+}
+
+/*BACKGROUND FOR PAGE THREE*/
+#pagethree {
+    background: white;
+}
+
+/*BACKGROUND FOR PAGE FOUR*/
+#pagefour{
+    background: white;
+}
+
+/*MENU BUTTONS FONT SIZE AND ALIGNMENT*/
+.menubutton {
+    float: right;
+    font-size: 20px;
+    margin-left: 30px;
+}
+
+/*SPACING BETWEEN EACH OF THE FOUR PAGES*/
+.padding {
+    padding: 50px;
+}
+
+/*CONTAINER FOR EACH OF THE FOUR PAGES*/
+.container{
+    width: 750px;
+    margin: 0px auto;
+    text-align: center;
+    color: white;
+    background-color: #81AEDA;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+}
+
+
+
+/*STYLING FOR EVERY CIRCLE WITH A PICTURE INSIDE OF IT EXCEPT FOR THE SOCIAL MEDIA ICONS*/
+.circle {
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid white;
+    position: relative;
+    margin: 0px auto;
+    padding: 2px;
+}
+
+/*SHADOWS UNDER CIRCLES WHEN HOVERED OVER*/
+.circle:hover{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+}
+/*TITLE AT THE TOP OF EVERY CARD/PAGE*/
+.title {
+  position: relative;
+    font-size: 40px;
+    font-weight: 500;
+    color: white;
+    margin-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/*SUMMARY AT THE BOTTOM OF EACH CARD/PAGE*/
+.summary {
+    position: relative;
+    margin-right: auto;
+    font-size: 15px;
+    line-height: 30px;
+    margin-top: 20px;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+/*STYLING FOR ALL SOCIAL MEDIA ICONS ON PAGE FOUR*/
+.contactpagecircle{
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 5px solid white;
+  position: relative;
+  margin: 0px auto;
+  background-color: white;
+}
+
+.contactpagecircle:hover{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+}
+
+/*SCALING ALL PICTURES ON SITE EXCEPT HEADSHOT PICTURE ON PAGE 2*/
+.picturesize {
+    width: 100%;
+    height: 100%;
+}
+
+/*SCALING FOR HEADSHOT PICTURE ON PAGE 2*/
+.headshotsize{
+    max-width: 175px;
+    max-height: 175px;
+}
