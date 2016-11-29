@@ -1,10 +1,9 @@
 $(document).ready(function(){
-	$(“.container”).hover(function1(){
-		$(".container").show();
-	background: #D4EAFF;
-	}
+	$('.circle').hover(
+		function() { $('.overlay').fadeIn(); },
+		function() { $('.overlay').fadeOut(); }
+	)
 
-});
 
 
 });

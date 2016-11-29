@@ -36,7 +36,7 @@ body {
     font-size: 20;
     font-weight: bolder;
     z-index: 100;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
 }
 
 /*BUTTONS IN THE MENU BAR*/
@@ -45,9 +45,17 @@ body {
     margin: 0px auto;
 }
 
-#menubuttons:hover{
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(0, 0, 0, 0.9);
-}
+ /* unvisited link */
+a {color:#81AEDA;}
+
+  /* visited link */
+a:visited {color:#81AEDA;}
+
+/* mouse over link */
+a:hover {color:#000000;}
+
+/* selected link */
+a:active {color:#81AEDA;}
 
 /*MY INITIALS IN THE MENU BAR*/
 #initials {
@@ -92,7 +100,13 @@ body {
     float: right;
     font-size: 20px;
     margin-left: 30px;
+    cursor: pointer;
 }
+
+/*SHADOW WHEN HOVERING OVER MENU BUTTONS*/
+.menubutton:hover{
+    color: white;
+    text-shadow: 0 0 5px #81AEDA;}
 
 /*SPACING BETWEEN EACH OF THE FOUR PAGES*/
 .padding {
@@ -101,15 +115,13 @@ body {
 
 /*CONTAINER FOR EACH OF THE FOUR PAGES*/
 .container{
-    width: 750px;
+    width: 775px;
     margin: 0px auto;
     text-align: center;
     color: white;
     background-color: #81AEDA;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
 }
-
-
 
 /*STYLING FOR EVERY CIRCLE WITH A PICTURE INSIDE OF IT EXCEPT FOR THE SOCIAL MEDIA ICONS*/
 .circle {
@@ -120,22 +132,24 @@ body {
     overflow: hidden;
     border: 5px solid white;
     position: relative;
-    margin: 0px auto;
-    padding: 2px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 25px;
 }
 
 /*SHADOWS UNDER CIRCLES WHEN HOVERED OVER*/
 .circle:hover{
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
 }
+
 /*TITLE AT THE TOP OF EVERY CARD/PAGE*/
 .title {
   position: relative;
     font-size: 40px;
     font-weight: 500;
     color: white;
-    margin-bottom: 20px;
-    padding-top: 20px;
+    margin-bottom: 30px;
+    padding-top: 30px;
     padding-bottom: 20px;
 }
 
@@ -145,12 +159,12 @@ body {
     margin-right: auto;
     font-size: 15px;
     line-height: 30px;
-    margin-top: 20px;
+    margin-top: 10px;
     color: white;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
     padding-bottom: 20px;
-}
+  }
 
 /*STYLING FOR ALL SOCIAL MEDIA ICONS ON PAGE FOUR*/
 .contactpagecircle{
@@ -161,12 +175,15 @@ body {
   overflow: hidden;
   border: 5px solid white;
   position: relative;
-  margin: 0px auto;
-  background-color: white;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 20px;
+  cursor: pointer;
 }
 
+/*SHADOW WHEN HOVERING OVER SOCIAL MEDIA CIRCLES*/
 .contactpagecircle:hover{
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
 }
 
 /*SCALING ALL PICTURES ON SITE EXCEPT HEADSHOT PICTURE ON PAGE 2*/

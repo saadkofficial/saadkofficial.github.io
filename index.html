@@ -10,8 +10,8 @@
 <link rel="stylesheet" type="text/css" href="assets/style.css" />
 
 <!-- LINKING JAVASCRIPT/JQUERY -->
-<script type="text/javascript" src="assets/script.js"></script>
 <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="assets/script.js"></script>
 </head>
 
 <!-- MENU BAR THAT STAYS FIXED ON THE TOP -->
@@ -19,9 +19,10 @@
 	<div id="menu">
 		<div id="menubuttons">
 			<div id="initials">SK</div>
-			<div class="menubutton">Experience</div>
-			<div class="menubutton">About</div>
-			<div class="menubutton">Home</div>
+			<a href="#pagefour"> <div class="menubutton">Contact</div></a>
+			<a href="#pagethree"><div class="menubutton">Experience</div></a>
+			<a href="#pagetwo"><div class="menubutton">About</div></a>
+			<a href="#pageone"><div class="menubutton">Home</div></a>
 		</div>
 	</div>
 
@@ -47,7 +48,10 @@
 	<section id="pagethree" class="padding">
 		<div class="container">
 			<div class="title">My Experience</div>
-			<div class="circle"><img class="picturesize" src="assets/haas.jpg"/></div>
+			<div class="circle">
+				<div class="circle-overlay"></div>
+				<img class="picturesize" src="assets/haas.jpg"/>
+			</div>
 			<div class="circle"><img class="picturesize" src="assets/deloitte.jpg"/></div>
 			<div class="circle"><img class="picturesize" src="assets/clarity.jpg"/></div>
 			<div class="summary">I love trying new things, and that's why my work experience is all over the place. I've worked as a teacher, consultant in the technology industry, and business analyst in the medical devices industry. If you have any opportunities and would like to work on something cool together, please don't hesitate to reach out!</div>
@@ -58,11 +62,11 @@
 	<section id="pagefour" class="padding">
 		<div class="container">
 			<div class="title">Contact</div>
-			<div class="contactpagecircle"><img class="picturesize" src="assets/linkedin.jpg"/></div>
-			<div class="contactpagecircle"><img class="picturesize" src="assets/gmail.jpg"/></div>
-			<div class="contactpagecircle"><img class="picturesize" src="assets/facebook.jpg"/></div>
-			<div class="contactpagecircle"><img class="picturesize" src="assets/instagram.jpg"/></div>
-			<div class="contactpagecircle"><img class="picturesize" src="assets/twitter.jpg"/></div>
+			<a href="https://www.linkedin.com/in/saadkhan925"><div class="contactpagecircle"><img class="picturesize" src="assets/linkedin.jpg"/></div></a>
+			<a href="mailto:saadkhan925@gmail.com"><div class="contactpagecircle"><img class="picturesize" src="assets/gmail.jpg"/></div></a>
+			<a href="https://www.facebook.com/saad925khan/about"><div class="contactpagecircle"><img class="picturesize" src="assets/facebook.jpg"/></div></a>
+			<a href="https://www.instagram.com/saadkofficial/"><div class="contactpagecircle"><img class="picturesize" src="assets/instagram.jpg"/></div></a>
+			<a href="https://twitter.com/saadkofficial"><div class="contactpagecircle"><img class="picturesize" src="assets/twitter.jpg"/></div></a>
 			<div class="summary">Click on on one of the icons above to contact me on your favorite social media site!</div>
 		</div>
 	</section>
